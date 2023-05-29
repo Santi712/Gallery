@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="header">
+                <h1 class="logo"><a href="">PhotoGallery</a></h1>
+                <form>
+                    <input type="text" placeholder="Buscador">
+                    <img class="lupa" src="img/search.svg" alt="lupa">
+                </form>
+            </div>
+            <div class="gallery">
+                <!-- carga mediante JavaScript -->
+            </div>
+            <div class="options">
+            <a class="load_more data_img='curated'">Cargar más</a>
+            <a href="#" class="load_more">Buscar otros</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+    	<div>
+            <h2>Sobre PG</h2>
+            <ul>
+                <li>Historia</li>
+                <li><a href="">Protección de datos</a></li>
+                <li><a href="">Cookies</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Únete al grupo</h2>
+            <ul>
+                <li>Aporta tu creatividad</li>
+            </ul>
+        </div>
+        <div>
+            <h2>¡Sígueme! :)</h2>
+            <ul>
+                <li><a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/b.santiago12/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+            </ul>
+        </div>
+        <div class="last">
+            <h2>¿Quieres subir una foto?<br> ¡Déjanos tu contacto!</h2>
+            <form action="" method="get">
+                <input type="email" placeholder="Email" required id="emailField">
+                <button id="buttonValidar" type="submit">Suscríbete</button>
+            </form>
+        </div>
+    </footer>
+    <footer class="color">
+        <div>Developed by Santiago Andrade</div>
+        <div>Copyright 2023 © Every rigths reserved.</div>
+    </footer>
+</body>
+
+<script src="gallery.js"></script>
+
+</html>

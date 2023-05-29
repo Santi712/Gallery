@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+body{
+    background-color: aquamarine;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+.container{
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 61px 7px #5e849c40;
+    padding: 50px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 2rem;
+}
+.header h1{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+.header h1 a{
+    text-decoration: none;
+    color: black;
+}
+form{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 300px;
+}
+.lupa{
+    height: 20px;
+    width: 20px;
+    opacity: .5;
+    color: gray;
+}
+input{
+    border: none;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.479);
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+    background-color: transparent;
+    width: 100%;
+}
+input::placeholder{
+    opacity: 0.5;
+    color: gray;
+    font-weight: 500;
+}
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px;
+    grid-gap: 20px;
+}
+.item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .3s ease box-shadow;
+}
+.item:hover{
+    box-shadow: 0px 0px 20px 3px #00000042;
+}
+.item h3{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    background-color: #00000040;
+    color: aliceblue;
+    bottom: -70px;
+    font-weight: 300;
+    transition: .5s ease-in-out bottom;
+    font-size: 20px;
+}
+.item:hover h3{
+    bottom: 0;
+}
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.load_more{
+    display: inline-block;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight:500;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.load_more:hover{
+    background-color: gray;
+    color: black;
+}
+footer{
+	display: inline-flex;
+  	flex-wrap: nowrap;
+	width: 100%;
+	background-color: rgb(0, 165, 137);
+	text-align: center;
+}
+footer h2{
+	font-size: 2.3em;
+}
+footer p{
+	text-emphasis: center;
+	padding: 50px;
+}
+footer a{
+	color: black;
+    text-decoration: none;
+}
+footer div{
+	width: 33%;
+	margin: 15px;
+	padding: 20px;
+}
+footer div ul{
+	list-style-type: none;
+}
+footer div ul li{
+	margin: 10px;
+    font-size: 1.5em;
+}
+footer div input{
+	padding: 2px;
+	margin-top: 5px;
+    margin-bottom: -2px;
+	font-size: 1.5em;
+	width: 200px;
+    height: 30px;
+    background-color: aliceblue;
+}
+footer div button{
+	background-color:#df6c00;
+	color: white;
+	padding: 2px;
+	margin-top: 5px;
+	font-size: 1.5em;
+	width: 200px;
+	border: none;
+}
+.last{
+	text-align: center;
+}
+
+.color{
+	color: rgba(108, 100, 100, 1);
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: space-between;
+	border-top: 1px solid #3f3f3f;
+	font-size: 1em;
+}
+
+/* ajustes de la zona de copyright y grupo de creación por SANTI */
+.color div{
+    color: #3a3a3a;
+    text-align: justify;
+    margin: 10px;
+    margin-left: 10%;
+}
+/* fin pie de página*/
+
+
+@media only screen and (min-width: 900px) {
+    .container{
+       max-width: 1160px;
+       padding: 100px; 
+    }
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header h1{
+        font-size: 50px;
+    }
+    section{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .input{
+        font-size: 50px;
+    }
+    .lupa{
+        width: 20px;
+        height: 20px;
+    }
+    .gallery{
+        grid-gap: 30px;
+    }
+}
+
+@media screen and (max-width:900px){
+    footer{
+        display: block;
+        padding: 1px;
+    }
+    footer div{
+        width: auto;
+    }
+    .color div{
+        margin: 5px 10px;
+        padding: 5px 10px;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
